@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HomeRest – Luxury Real Estate</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Arabic:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="logo" href="#/home" aria-label="HomeRest home">
+    <svg viewBox="0 0 60 56" aria-hidden="true"><polygon points="0,56 22,12 46,56" fill="#F5A634"/><circle cx="40" cy="20" r="20" fill="#F5A634"/></svg>
+    <span><b>H</b>OME<b>R</b>EST</span>
+  </a>
+  <nav><ul><li><a href="#/home" data-r="home">HOME</a></li><li><a href="#/selling" data-r="selling">SELLING</a></li><li><a href="#/buying" data-r="buying">BUYING</a></li><li><a href="#/about" data-r="about">ABOUT</a></li><li><a href="#/login" id="na" data-r="login">SIGN IN</a></li><li><button class="lg" id="lg" type="button" aria-label="Switch language">العربية</button></li></ul></nav>
+</header>
+
+<main class="track" id="track" data-v="home login">
+  <div class="stage">
+    <img class="room" id="room" src="room.jpg" alt="">
+    <div class="wall" id="wall"><img src="wall.png" alt=""></div>
+    <div class="shade" id="shade"></div>
+    <div class="hero" id="hero" data-v="home">
+      <h1>Luxury Real Estate</h1>
+      <p class="sub">Elevate your living experience</p>
+      <p>Premium homes tailored to your lifestyle. Explore our exclusive listings and find the perfect space to call home.</p>
+      <a class="cta" href="#/buying">Explore now</a>
+    </div>
+    <div class="lw" id="lw" data-v="login"><div class="lc">
+<div id="lout"><h1 id="lh">Welcome back</h1><p class="mut" id="ls"></p>
+<div class="tabs" role="tablist"><button type="button" role="tab" id="ti" aria-selected="true">Sign in</button><button type="button" role="tab" id="tu" aria-selected="false">Create account</button></div>
+<form class="f" id="lf" novalidate>
+<label id="lnw" hidden>Full name<input id="ln" autocomplete="name"><span class="err" role="alert" id="ene"></span></label>
+<label>Email<input id="le" type="email" autocomplete="email"><span class="err" role="alert" id="eee"></span></label>
+<label>Password<span class="pw"><input id="lp" type="password" autocomplete="current-password"><button type="button" id="sp" aria-label="Show password">Show</button></span><span class="err" role="alert" id="epe"></span></label>
+<button class="btn" id="lb" type="submit">Sign in</button></form></div>
+<div id="lin" hidden><h1>You’re signed in</h1><p class="mut" id="lu"></p><a class="btn" href="#/buying">Browse homes</a><button class="btn alt" id="lo" type="button">Sign out</button></div>
+</div></div>
+<div class="cue" id="cue" data-v="home">Scroll to step inside<i></i></div>
+  </div>
+</main>
+
+<section class="pg h" data-v="home"><h2>Homes on the market now</h2><p class="lede">A few of the properties our agents are showing this month.</p><div class="grid" id="fh"></div><p style="margin-top:1.6rem"><a class="btn" href="#/buying">See all homes</a></p></section>
+<section class="pg" data-v="selling"><h1>Sell for what your home is worth</h1><p class="lede">Tell us about the property and an agent will send you a written valuation, not a sales pitch.</p>
+<div class="split"><ol class="steps"><li><h3>Request a valuation</h3><p>Share the address and a few details. We visit only if you want us to.</p></li><li><h3>We prepare and list</h3><p>Photography, staging advice, and a price we can explain line by line.</p></li><li><h3>Offers and closing</h3><p>Your agent handles viewings and negotiation, and stays with you until the keys change hands.</p></li></ol>
+<form class="f card" id="sf"><h2>Get your valuation</h2><label>Property address<input required autocomplete="street-address"></label><label>Email<input type="email" required autocomplete="email"></label><label>Home type<select><option>House</option><option>Apartment</option><option>Townhouse</option></select></label><button class="btn" type="submit">Request valuation</button><p class="ok" role="status" hidden></p></form></div></section>
+<section class="pg" data-v="buying"><h1>Find a home you’ll want to come back to</h1><p class="lede">Filter by price and bedrooms, then ask for a viewing on anything that catches your eye.</p>
+<div class="bar f"><label>Price<select id="pf"><option value="any">Any price</option><option value="1">Under $1M</option><option value="2">$1M to $2M</option><option value="3">Over $2M</option></select></label><label>Bedrooms<select id="bf"><option value="0">Any</option><option value="2">2 or more</option><option value="3">3 or more</option><option value="4">4 or more</option></select></label><p class="mut" id="cnt" aria-live="polite"></p></div>
+<div class="grid" id="bg"></div><div class="empty" id="em" hidden><p>No homes match those filters. Widen the price range or lower the bedroom count.</p><button class="btn alt" id="rs" type="button">Reset filters</button></div></section>
+<section class="pg" data-v="about"><h1>A small agency, on purpose</h1><p class="lede">HomeRest is built on one idea: a sale or purchase goes better when one person knows your whole story. Every client works with a single agent from the first call to the day the keys change hands.</p>
+<div class="three"><div><h3>Honest pricing</h3><p>We show the comparable sales behind every number we give you.</p></div><div><h3>One agent throughout</h3><p>No hand-offs between teams. The person who meets you is the person who closes with you.</p></div><div><h3>Replies within a day</h3><p>Questions get a real answer by the next business day, usually sooner.</p></div></div>
+<h2 style="margin-top:3.5rem">Meet the agents</h2>
+<div class="three"><div class="who"><span class="av" aria-hidden="true">AO</span><div><h3>Amara Okafor</h3><p>Principal agent, selling</p></div></div><div class="who"><span class="av" aria-hidden="true">DR</span><div><h3>Daniel Reyes</h3><p>Buyer’s agent</p></div></div><div class="who"><span class="av" aria-hidden="true">PN</span><div><h3>Priya Nair</h3><p>Luxury and new builds</p></div></div></div>
+<div class="split" id="contact"><div><h2>Talk to us</h2><p class="lede">Tell us what you’re looking for or what you’d like to sell. An agent will reply within one business day.</p></div>
+<form class="f card" id="cf"><label>Name<input required autocomplete="name"></label><label>Email<input type="email" required autocomplete="email"></label><label>Message<textarea id="cm" rows="4" required></textarea></label><button class="btn" type="submit">Send message</button><p class="ok" role="status" hidden></p></form></div></section>
+<footer class="ft" data-v="home selling buying about"><span>© 2026 HomeRest</span><nav><a href="#/buying">Buying</a><a href="#/selling">Selling</a><a href="#/about">About</a><a href="#/login">Sign in</a></nav></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
